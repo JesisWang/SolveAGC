@@ -1,12 +1,12 @@
 num=size(AGC);
-x = linspace(datenum('2018-08-13 07:00:00'),datenum('2018-08-14 06:59:59'),num(1));   %Éú³É360¸öÊ±¼ä
-y = AGC;    % Éú³ÉÊ±¼äĞòÁĞy
-plot(x,y);            % »­Í¼
-% Éè¼ÆXÖá×ø±ê
-N = 12;   %×ø±êÖáÉÏÏÔÊ¾N¸ö¿Ì¶È
-% xÖáÏÔÊ¾¿Ì¶ÈµÄÊ±¼äÇø¼ä£¬ÒÔ¼°Çø¼äÊıN
+x = linspace(datenum('2018-08-13 07:00:00'),datenum('2018-08-14 06:59:59'),num(1));   %ç”Ÿæˆ360ä¸ªæ—¶é—´
+y = AGC;    % ç”Ÿæˆæ—¶é—´åºåˆ—y
+plot(x,y); % ç”»å›¾
+% è®¾è®¡Xè½´åæ ‡
+N = 12;   %åæ ‡è½´ä¸Šæ˜¾ç¤ºNä¸ªåˆ»åº¦
+% xè½´æ˜¾ç¤ºåˆ»åº¦çš„æ—¶é—´åŒºé—´ï¼Œä»¥åŠåŒºé—´æ•°N
 date_point = linspace(datenum('2018-08-13 06:00:00'),datenum('2018-08-14 08:00:00'),14);
-set(gca,'xtick',date_point );  % xÖá·Öm¸öĞ¡¿Ì¶È
-date_point_str = datestr(date_point,'yyyy-mm-dd HH:MM:SS');   %XÖá¿Ì¶ÈÉÏ¶ÔÓ¦µÄ×Ö·û
-set(gca,'xticklabel',date_point_str)   %ÏÔÊ¾Ğ¡¿Ì¶ÈµÄÖµ
+set(gca,'xtick',date_point );  % xè½´åˆ†mä¸ªå°åˆ»åº¦
+date_point_str = datestr(date_point,'yyyy-mm-dd HH:MM:SS');   %Xè½´åˆ»åº¦ä¸Šå¯¹åº”çš„å­—ç¬¦
+set(gca,'xticklabel',date_point_str)   %æ˜¾ç¤ºå°åˆ»åº¦çš„å€¼
 set(gca,'XTickLabelRotation',30)
